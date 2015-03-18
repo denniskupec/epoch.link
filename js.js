@@ -1,27 +1,18 @@
 
 /* meh */
 
-function epoch()
-{
-	var date = display.innerHTML = Date.now().toString().slice(0, 10);
+(function(){
 
-	document.getElementById("display").innerHTML = date;
-	window.location.replace("#  " + date);
+	setInterval(function() {
 
-	return date;
-}
+		var date = display.innerHTML = Date.now().toString().slice(0, 10);
 
-window.onload = function(){
+		document.getElementById("display").innerHTML = date;
 
-	epoch();
-	setInterval(epoch, 500);
+		window.location.replace("#  " + date);
 
-	window.addEventListener("focus", function() {
-		document.title = "epoch.link";
-	});
+		document.title = document.hasFocus() ? "epoch.link" : "T: " + date;
 
-	window.addEventListener("blur", function() {
-    	document.title = "T: " + epoch();
-	});
+	}, 100);
 
-};
+})();
