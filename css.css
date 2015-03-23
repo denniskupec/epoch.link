@@ -5,6 +5,7 @@ body {
 	color: #2ECC40;
 	background-color: #111111;
 	font-family: "PT Mono", Monaco, Consolas, "Courier New", monospace;
+	font-size: 3em;
 }
 
 .container {
@@ -18,6 +19,7 @@ body {
 	-webkit-transform: translate(-50%, -50%);
 }
 
-.display {
-	font-size: 3em;
+.display sub {
+	font-size: 0.5em;
+	color: #202E20;
 }
