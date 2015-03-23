@@ -1,23 +1,10 @@
 
 /* ill do responsive css later */
 
-html, body {
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
 body {
 	color: #2ECC40;
 	background-color: #111111;
 	font-family: "PT Mono", Monaco, Consolas, "Courier New", monospace;
-	font-size: 1em;
-}
-
-hr {
-	border: 0;
-	height: 0;
-	border-bottom: 1px solid #2ECC40;
 }
 
 .container {
