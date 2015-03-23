@@ -5,7 +5,7 @@
 
 	setInterval(function() {
 
-		var date = display.innerHTML = Date.now().toString().slice(0, 10);
+		var date = Math.round(Date.now() / 1000);
 
 		document.getElementById("display").innerHTML = date;
 
