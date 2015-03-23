@@ -3,16 +3,22 @@
 
 (function(){
 
+	var lastSec;
+
 	setInterval(function() {
 
-		var date = Math.round(Date.now() / 1000);
+		var date = Date.now();
+		var dsec = Math.round(date / 1000);
 
 		document.getElementById("display").innerHTML = date;
 
-		window.location.replace("#  " + date);
+		if(dsec !== lastSec) {
+			lastSec = dsec;
 
-		document.title = document.hasFocus() ? "epoch.link" : "T: " + date;
+			window.location.replace("#  " + dsec);
+			document.title = document.hasFocus() ? "epoch.link" : "T: " + dsec;
+		}
 
-	}, 100);
+	}, 10);
 
 })();
