@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+    	{
+    		"source": "/github",
+    		"destination": "https://github.com/denniskupec/epoch.link",
+    		"type": 301
+    	}
+    ],
+    "headers": [
+    	{
+    		"source" : "*.@(html|png|jpg|css)",
+    		"headers" : [
+    			{ "key" : "Cache-Control", "value" : "max-age=86400" }
+  			]
+    	}
+    ]
+  }
+}
