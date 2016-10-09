@@ -1,0 +1,23 @@
+/* epoch.link */
+
+html, body { 
+	background-color: #121317;
+	font-family: monospace; 
+	color: #CBDBF6; 
+	padding: 0;
+	margin: 0;
+} 
+
+.timer { 
+	font-size: 2em; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	/* probably doesn't work everywhere, upgrade your browsers people */
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	/* mobile is cheating */
+} 
