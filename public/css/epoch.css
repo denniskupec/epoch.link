@@ -1,4 +1,8 @@
-/* epoch.link */
+/* 
+epoch.link | rev. 2
+(c) 2016, Dennis Kupec
+MIT License
+*/
 
 html, body {
 	background-color: #121317;
@@ -22,14 +26,67 @@ a {
 
 .timer { 
 	font-size: 2em; 
-	position: absolute;
+	position: absolute; 
 	top: 50%;
 	left: 50%;
 
-	/* probably doesn't work everywhere, upgrade your browsers people */
-	transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
-	/* mobile is cheating */
+	transform: translate(-50%, -50%);
 } 
+
+@media (min-width: 400px) {
+
+	.timer {
+		font-size: 5em;
+	}
+
+	.social .small {
+		display: none;
+	}
+
+	.social .large {
+		display: inline-block;
+	}
+
+}
+
+@media (max-width: 1000px) {
+
+	.timer {
+		font-size: 4em;
+	}
+
+	.social .small {
+		display: none;
+	}
+
+	.social .large {
+		display: inline-block;
+	}
+
+}
+
+@media (min-width: 1000px) {
+
+	.timer {
+		font-size: 2em;
+	}
+
+	.social .small {
+		display: inline-block;
+	}
+
+	.social .large {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
