@@ -1,0 +1,6 @@
+/* 
+epoch.link | rev. 2
+(c) 2016, Dennis Kupec
+MIT License
+*/
+.social,.timer{position:absolute}body,html{background-color:#121317;color:#CBDBF6;font-family:"PT Mono",monospace;text-align:center}a{color:#A7FF99;text-decoration:none}.social{left:0;right:0;bottom:3%;padding:4rem}.timer{font-size:2em;top:50%;left:50%;-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}@media (min-width:400px){.timer{font-size:5em}.social .small{display:none}.social .large{display:inline-block}}@media (max-width:1000px){.timer{font-size:4em}.social .small{display:none}.social .large{display:inline-block}}@media (min-width:1000px){.timer{font-size:2em}.social .small{display:inline-block}.social .large{display:none}}
