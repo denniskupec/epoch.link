@@ -12,6 +12,14 @@ a {
 	text-decoration: none;
 }
 
+.social {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 3%;
+	padding: 4rem;
+}
+
 .timer { 
 	font-size: 2em; 
 	position: absolute;
