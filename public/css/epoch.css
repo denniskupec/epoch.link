@@ -1,12 +1,16 @@
 /* epoch.link */
 
-html, body { 
+html, body {
 	background-color: #121317;
-	font-family: monospace; 
 	color: #CBDBF6; 
-	padding: 0;
-	margin: 0;
+	font-family: "PT Mono", monospace;
+	text-align: center;
 } 
+
+a {
+	color: #A7FF99;
+	text-decoration: none;
+}
 
 .timer { 
 	font-size: 2em; 
