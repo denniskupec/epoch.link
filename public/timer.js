@@ -11,11 +11,12 @@ MIT License
 
 	var setTimestamp = function() {
 		i += 1;
-		holder.innerText = Math.floor(Date.now() / 1000);
+		//holder.innerText = Math.floor(Date.now() / 1000);
+		holder.innerText = parseInt(holder.innerText) + 1;
 		document.title = "epoch.link | " + holder.innerText; 
 	};
 
-	setTimestamp();
+	holder.innerText = Math.floor(Date.now() / 1000);
 
 	setInterval(setTimestamp, 1000);
 
